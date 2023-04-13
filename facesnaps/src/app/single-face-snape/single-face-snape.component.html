@@ -1,0 +1,16 @@
+
+<div class="face-snap-card" *ngIf="faceSnap$ | async as faceSnap" [ngClass]="{snapped:buttonText === '👎'}">
+    <P> {{55.36  | currency:'EUR' }}</P>
+    <h2>{{ faceSnap.title | titlecase }}</h2>
+    <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
+    <h2>{{ faceSnap.description }}</h2>
+    <h2 *ngIf="faceSnap.location">photo prise a {{ faceSnap.location }}</h2>
+    <p>mise en ligne {{ faceSnap.createdDate | date : 'à HH:mm le dd/MM/yy' }}</p>
+    <p>
+        <button (click)="onSnaps (faceSnap.id)">{{ buttonText }}</button> 
+        <a routerLink="/facesnaps"><button>Back</button></a>
+        <span [ngStyle]="{Color:'rgb(' + faceSnap.snaps * 3 + ',' + faceSnap.snaps * 11 + ', 200)'}">
+            {{faceSnap.snaps}}
+        </span>
+    </p>
+</div>

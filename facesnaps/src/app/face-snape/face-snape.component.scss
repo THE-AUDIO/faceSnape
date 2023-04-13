@@ -1,0 +1,79 @@
+.face-snap-card {
+  width: 50%;
+  box-sizing: border-box;
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-shadow: 2px 4px 7px 6px #c3c3c354;
+  border-radius: 20px;
+  align-items: center;
+  jcc
+
+  span {
+    padding: .3em;
+    border-radius: 10px;
+    border: 2px solid blue;
+  }
+  button:hover{
+    background-color: rgb(18, 82, 219);
+    transform: scale(1.02);
+    
+  }
+
+  img {
+      width: 10%;
+      border-radius: 20px;
+      transition: 2s; 
+  }
+  // img:hover{
+  //   transform: scale(1.02);
+
+  // }
+  h2 {
+    margin-bottom: 0;
+    text-align: center;
+    transform: translateY(800);
+    transition: 2s;
+  }
+
+  h2:hover{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1em;
+  }
+
+  button {
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border: none;
+    box-shadow:  rgb(76, 50, 245) 3px 3px 7px;
+    margin-right: 20px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    align-items: center;
+
+    &:active {
+      transform: translate(1px, 1px);
+      box-shadow:  rgb(76, 50, 245) 0 0 5px;
+    }  
+  }
+}
+.snapped{
+  background-color: rgba(lightgreen, 0.4);
+  color: darkgreen;
+  button{
+    box-shadow: lightgreen 3px 3px 7px;
+    color: darkgreen;
+    &:active{
+      box-shadow: lightgreen 0px 0px 5px;
+    }
+  }
+}
