@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { interval, Observable} from 'rxjs';
-import { HeaderComponent } from './core/component/header/header.component';
-import { filter, map,tap } from 'rxjs/operators';
+import { Observable} from 'rxjs';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

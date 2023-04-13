@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { FaceSnap } from '../core/models/face-snaps.models';
-import { FacesnapService } from '../core/service/fece-snaps.sercice'; 
+import { FaceSnap } from 'src/app/core/models/face-snaps.models';
+import { FacesnapService } from 'src/app/core/service/fece-snaps.sercice'; 
 import{tap,interval,of, take, Observable, takeUntil, Subject} from 'rxjs' 
 
 @Component({

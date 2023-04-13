@@ -4,21 +4,14 @@ import { registerLocaleData } from '@angular/common';
 import * as fr from '@angular/common/locales/fr';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FaceSnapeComponent } from './face-snape/face-snape.component';
-import { FaceSnapeListComponent } from './face-snape-list/face-snape-list.component';
-import { SingleFaceSnapeComponent } from './single-face-snape/single-face-snape.component';
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { NewFaceSnapComponent } from './new-face-snap/new-face-snap.component'; 
+import { FormsModule, ReactiveFormsModule } from "@angular/forms"; 
 import { CoreModule } from './core/core.module';
 import { LandinPageComponent } from './landing-page/component/landing-page/landin-page.component';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FaceSnapeComponent,
-    FaceSnapeListComponent,
-    SingleFaceSnapeComponent,
-    NewFaceSnapComponent,
     LandinPageComponent
   ],
   imports: [
@@ -27,6 +20,7 @@ import { LandinPageComponent } from './landing-page/component/landing-page/landi
     FormsModule,
     ReactiveFormsModule,
     CoreModule,
+    AuthModule
   ],
    
     bootstrap: [AppComponent],
